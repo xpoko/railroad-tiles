@@ -432,19 +432,21 @@ export default function Randomizer() {
 												#{index + 1}
 											</span>
 											<span className="text-lg">{item.name}</span>
-											<span className="text-sm font-normal">{item.condition}</span>
+											<span className="text-sm font-normal">
+												{item.condition}
+											</span>
 										</div>
 									))}
 								</div>
 							</div>
 
-							{/* Red Pawns */}
-							<div className="mb-6">
-								<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
-									<Users className="w-5 h-5 text-red-600 dark:text-red-400" />
-									Red Pawn (1)
-								</h3>
-								<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+								{/* Red Pawns */}
+								<div className="mb-6">
+									<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
+										<Users className="w-5 h-5 text-red-600 dark:text-red-400" />
+										Red Pawn (1)
+									</h3>
 									{randomizedItems.red.map((item, index) => (
 										<div
 											key={index}
@@ -454,19 +456,19 @@ export default function Randomizer() {
 											}}
 										>
 											<span className="text-lg">{item.name}</span>
-											<span className="text-sm font-normal">{item.condition}</span>
+											<span className="text-sm font-normal">
+												{item.condition}
+											</span>
 										</div>
 									))}
 								</div>
-							</div>
 
-							{/* Blue Pawns */}
-							<div className="mb-6">
-								<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
-									<Truck className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-									Blue Pawn (1)
-								</h3>
-								<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+								{/* Blue Pawns */}
+								<div className="mb-6">
+									<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
+										<Truck className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+										Blue Pawn (1)
+									</h3>
 									{randomizedItems.blue.map((item, index) => (
 										<div
 											key={index}
@@ -476,19 +478,19 @@ export default function Randomizer() {
 											}}
 										>
 											<span className="text-lg">{item.name}</span>
-											<span className="text-sm font-normal">{item.condition}</span>
+											<span className="text-sm font-normal">
+												{item.condition}
+											</span>
 										</div>
 									))}
 								</div>
-							</div>
 
-							{/* Yellow Pawns */}
-							<div className="mb-6">
-								<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
-									<Train className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
-									Yellow Pawn (1)
-								</h3>
-								<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+								{/* Yellow Pawns */}
+								<div className="mb-6">
+									<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
+										<Train className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
+										Yellow Pawn (1)
+									</h3>
 									{randomizedItems.yellow.map((item, index) => (
 										<div
 											key={index}
@@ -498,7 +500,9 @@ export default function Randomizer() {
 											}}
 										>
 											<span className="text-lg">{item.name}</span>
-											<span className="text-sm font-normal">{item.condition}</span>
+											<span className="text-sm font-normal">
+												{item.condition}
+											</span>
 										</div>
 									))}
 								</div>
@@ -510,7 +514,8 @@ export default function Randomizer() {
 						<div className="mb-8 text-center p-12 bg-gray-50 dark:bg-gray-700 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600">
 							<Shuffle className="w-16 h-16 text-gray-400 dark:text-gray-500 mx-auto mb-4" />
 							<p className="text-gray-500 dark:text-gray-400 text-lg">
-								Click the <strong>Randomize All</strong> button to generate your setup!
+								Click the <strong>Randomize All</strong> button to generate your
+								setup!
 							</p>
 						</div>
 					)}
