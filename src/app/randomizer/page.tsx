@@ -441,8 +441,7 @@ export default function Randomizer() {
 							</div>
 
 							<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-								{/* Red Pawns */}
-								<div className="mb-6">
+								<div className="flex flex-col">
 									<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
 										<Users className="w-5 h-5 text-red-600 dark:text-red-400" />
 										Red Pawn (1)
@@ -450,7 +449,7 @@ export default function Randomizer() {
 									{randomizedItems.red.map((item, index) => (
 										<div
 											key={index}
-											className="flex flex-col gap-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-red-400 dark:border-red-600 rounded-lg p-3 text-center text-gray-800 dark:text-white font-semibold shadow-sm animate-fade-in"
+											className="flex flex-1 flex-col gap-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-red-400 dark:border-red-600 rounded-lg p-3 text-center text-gray-800 dark:text-white font-semibold shadow-sm animate-fade-in"
 											style={{
 												animationDelay: `${300 + index * 100}ms`,
 											}}
@@ -462,9 +461,7 @@ export default function Randomizer() {
 										</div>
 									))}
 								</div>
-
-								{/* Blue Pawns */}
-								<div className="mb-6">
+								<div className="flex flex-col">
 									<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
 										<Truck className="w-5 h-5 text-blue-600 dark:text-blue-400" />
 										Blue Pawn (1)
@@ -472,7 +469,7 @@ export default function Randomizer() {
 									{randomizedItems.blue.map((item, index) => (
 										<div
 											key={index}
-											className="flex flex-col gap-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-blue-400 dark:border-blue-600 rounded-lg p-3 text-center text-gray-800 dark:text-white font-semibold shadow-sm animate-fade-in"
+											className="flex flex-1 flex-col gap-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-blue-400 dark:border-blue-600 rounded-lg p-3 text-center text-gray-800 dark:text-white font-semibold shadow-sm animate-fade-in"
 											style={{
 												animationDelay: `${400 + index * 100}ms`,
 											}}
@@ -484,9 +481,7 @@ export default function Randomizer() {
 										</div>
 									))}
 								</div>
-
-								{/* Yellow Pawns */}
-								<div className="mb-6">
+								<div className="flex flex-col ">
 									<h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
 										<Train className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
 										Yellow Pawn (1)
@@ -494,7 +489,7 @@ export default function Randomizer() {
 									{randomizedItems.yellow.map((item, index) => (
 										<div
 											key={index}
-											className="flex flex-col gap-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg p-3 text-center text-gray-800 dark:text-white font-semibold shadow-sm animate-fade-in"
+											className="flex flex-1 flex-col gap-1 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg p-3 text-center text-gray-800 dark:text-white font-semibold shadow-sm animate-fade-in"
 											style={{
 												animationDelay: `${500 + index * 100}ms`,
 											}}
