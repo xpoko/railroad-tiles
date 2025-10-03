@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Railroad Tiles",
   description: "Railroad Tiles",
+	icons: {
+		icon: "/rrt.png",
+	},
 };
 
 export default function RootLayout({
