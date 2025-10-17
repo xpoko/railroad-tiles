@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Railroad Tiles",
-  description: "Railroad Tiles",
+  title: "Horrible Guild",
+  description: "Horrible Guild",
 	icons: {
-		icon: "/rrt.png",
+		icon: "/hg.png",
 	},
 };
 
